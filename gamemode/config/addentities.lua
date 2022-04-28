@@ -130,7 +130,7 @@ DarkRP.createEntity("Money printer", {
     ent = "money_printer",
     model = "models/props_c17/consolebox01a.mdl",
     price = 1000,
-    max = 2,
+    max = 10,
     cmd = "buymoneyprinter"
 })
 
@@ -234,3 +234,77 @@ DarkRP.createCategory{
     canSee = fp{fn.Id, true},
     sortOrder = 255,
 }
+
+
+
+-- DarkRP.createShipment("Desert eagle", {
+--     model = "models/weapons/c_mw2_deagle.mdl",
+--     entity = "robotnik_mw2_de",
+--     price = 215,
+--     amount = 10,
+--     separate = true,
+--     pricesep = 215,
+--     noship = true,
+--     allowed = {TEAM_GUN},
+--     category = "Pistols",
+-- })
+
+-- DarkRP.createShipment("G18", {
+--     model = "models/weapons/c_mw2_g18.mdl",
+--     entity = "robotnik_mw2_g18",
+--     price = 0,
+--     amount = 10,
+--     separate = true,
+--     pricesep = 205,
+--     noship = true,
+--     allowed = {TEAM_GUN},
+--     category = "Pistols",
+-- })
+
+-- DarkRP.createShipment("AK47", {
+--     model = "models/weapons/w_mw2_ak47new.mdl",
+--     entity = "robotnik_mw2_ak",
+--     price = 2450,
+--     amount = 10,
+--     separate = false,
+--     pricesep = nil,
+--     noship = false,
+--     allowed = {TEAM_GUN},
+--     category = "Rifles",
+-- })
+
+-- DarkRP.createShipment("MP5k", {
+--     model = "models/weapons/w_mw2_mp5k_new.mdl",
+--     entity = "robotnik_mw2_mp5",
+--     price = 2200,
+--     amount = 10,
+--     separate = false,
+--     pricesep = nil,
+--     noship = false,
+--     allowed = {TEAM_GUN},
+--     category = "Rifles",
+-- })
+
+-- DarkRP.createShipment("M4A1", {
+--     model = "models/weapons/w_mw2_m4a1_new.mdl",
+--     entity = "robotnik_mw2_m4",
+--     price = 2450,
+--     amount = 10,
+--     separate = false,
+--     pricesep = nil,
+--     noship = false,
+--     allowed = {TEAM_GUN},
+--     category = "Rifles",
+-- })
+
+-- DarkRP.createShipment("SPAS-12", {
+--     model = "models/weapons/c_mw2_spas12.mdl",
+--     entity = "robotnik_mw2_sps",
+--     price = 1750,
+--     amount = 10,
+--     separate = false,
+--     pricesep = nil,
+--     noship = false,
+--     allowed = {TEAM_GUN},
+--     category = "Shotguns",
+-- })
