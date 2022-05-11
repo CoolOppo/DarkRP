@@ -8,7 +8,7 @@ function ENT:createItem()
     local gun = ents.Create("spawned_weapon")
 
     local wep = weapons.Get(GAMEMODE.Config.gunlabweapon)
-    gun:SetModel(wep and wep.WorldModel or "models/weapons/w_pist_p228.mdl")
+    gun:SetModel(wep and wep.WorldModel or "models/weapons/tfa_csgo/w_glock18.mdl")
     gun:SetWeaponClass(GAMEMODE.Config.gunlabweapon)
     local gunPos = self:GetPos() + self.SpawnOffset
     gun:SetPos(gunPos)

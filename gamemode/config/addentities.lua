@@ -1,130 +1,229 @@
-DarkRP.createShipment("Desert eagle", {
-    model = "models/weapons/w_pist_deagle.mdl",
-    entity = "weapon_deagle2",
-    price = 215,
-    amount = 10,
-    separate = true,
-    pricesep = 215,
-    noship = true,
-    allowed = {TEAM_GUN},
-    category = "Pistols",
-})
-
-DarkRP.createShipment("Fiveseven", {
-    model = "models/weapons/w_pist_fiveseven.mdl",
-    entity = "weapon_fiveseven2",
-    price = 0,
-    amount = 10,
-    separate = true,
-    pricesep = 205,
-    noship = true,
-    allowed = {TEAM_GUN},
-    category = "Pistols",
-})
-
-DarkRP.createShipment("Glock", {
-    model = "models/weapons/w_pist_glock18.mdl",
-    entity = "weapon_glock2",
-    price = 0,
-    amount = 10,
-    separate = true,
-    pricesep = 160,
-    noship = true,
-    allowed = {TEAM_GUN},
-    category = "Pistols",
-})
-
-DarkRP.createShipment("P228", {
-    model = "models/weapons/w_pist_p228.mdl",
-    entity = "weapon_p2282",
-    price = 0,
-    amount = 10,
-    separate = true,
-    pricesep = 185,
-    noship = true,
-    allowed = {TEAM_GUN},
-    category = "Pistols",
-})
-
-DarkRP.createShipment("AK47", {
-    model = "models/weapons/w_rif_ak47.mdl",
-    entity = "weapon_ak472",
-    price = 2450,
-    amount = 10,
-    separate = false,
-    pricesep = nil,
+-- Rifles
+DarkRP.createShipment("AK-47", {
+    entity = "tfa_csgo_ak47",
+    model = "models/weapons/tfa_csgo/w_ak47.mdl",
+    amount = 5,
+    price = 3000,
+    pricesep = 500,
     noship = false,
-    allowed = {TEAM_GUN},
+    separate = true,
     category = "Rifles",
+    allowed = {
+        TEAM_GUN
+    },
 })
 
-DarkRP.createShipment("MP5", {
-    model = "models/weapons/w_smg_mp5.mdl",
-    entity = "weapon_mp52",
+DarkRP.createShipment("Galil", {
+    entity = "tfa_csgo_galil",
+    model = "models/weapons/tfa_csgo/w_galil.mdl",
+    amount = 5,
     price = 2200,
-    amount = 10,
-    separate = false,
-    pricesep = nil,
+    pricesep = 350,
     noship = false,
-    allowed = {TEAM_GUN},
+    separate = true,
     category = "Rifles",
+    allowed = {
+        TEAM_GUN
+    },
 })
 
-DarkRP.createShipment("M4", {
-    model = "models/weapons/w_rif_m4a1.mdl",
-    entity = "weapon_m42",
-    price = 2450,
-    amount = 10,
-    separate = false,
-    pricesep = nil,
+DarkRP.createShipment("M4A4", {
+    entity = "tfa_csgo_m4a4",
+    model = "models/weapons/tfa_csgo/w_m4a4.mdl",
+    amount = 5,
+    price = 3000,
+    pricesep = 475,
     noship = false,
-    allowed = {TEAM_GUN},
+    separate = true,
     category = "Rifles",
+    allowed = {
+        TEAM_GUN
+    },
 })
 
-DarkRP.createShipment("Mac 10", {
-    model = "models/weapons/w_smg_mac10.mdl",
-    entity = "weapon_mac102",
-    price = 2150,
-    amount = 10,
-    separate = false,
-    pricesep = nil,
+DarkRP.createShipment("M4A1-S", {
+    entity = "tfa_csgo_m4a1",
+    model = "models/weapons/tfa_csgo/w_m4a1.mdl",
+    amount = 5,
+    price = 3500,
+    pricesep = 550,
     noship = false,
-    allowed = {TEAM_GUN}
+    separate = true,
+    category = "Rifles",
+    allowed = {
+        TEAM_GUN
+    },
 })
 
-DarkRP.createShipment("Pump shotgun", {
-    model = "models/weapons/w_shot_m3super90.mdl",
-    entity = "weapon_pumpshotgun2",
-    price = 1750,
-    amount = 10,
-    separate = false,
-    pricesep = nil,
-    noship = false,
-    allowed = {TEAM_GUN},
-    category = "Shotguns",
-})
+-- Snipers
 
-DarkRP.createShipment("Sniper rifle", {
-    model = "models/weapons/w_snip_g3sg1.mdl",
-    entity = "ls_sniper",
-    price = 3750,
-    amount = 10,
-    separate = false,
-    pricesep = nil,
+
+DarkRP.createShipment("SSG 08", {
+    entity = "tfa_csgo_ssg08",
+    model = "models/weapons/tfa_csgo/w_scout.mdl",
+    amount = 5,
+    price = 2200,
+    pricesep = 400,
     noship = false,
-    allowed = {TEAM_GUN},
+    separate = true,
     category = "Snipers",
+    allowed = {
+        TEAM_GUN
+    },
 })
 
-DarkRP.createEntity("Drug lab", {
-    ent = "drug_lab",
-    model = "models/props_lab/crematorcase.mdl",
-    price = 400,
-    max = 3,
-    cmd = "buydruglab",
-    allowed = {TEAM_GANG, TEAM_MOB}
+-- SMG
+
+DarkRP.createShipment("MP5-SD", {
+    entity = "tfa_csgo_mp5sd",
+    model = "models/weapons/tfa_csgo/w_smg_mp5sd.mdl",
+    amount = 5,
+    price = 4000,
+    pricesep = 600,
+    noship = false,
+    separate = true,
+    category = "SMGs",
+    allowed = {
+        TEAM_GUN
+    },
 })
+
+DarkRP.createShipment("MAC10", {
+    entity = "tfa_csgo_mac10",
+    model = "models/weapons/tfa_csgo/w_mac10.mdl",
+    amount = 4,
+    price = 1800,
+    pricesep = 300,
+    noship = false,
+    separate = true,
+    category = "SMGs",
+    allowed = {
+        TEAM_GUN
+    },
+})
+
+-- Pistol 
+DarkRP.createShipment("Akimbo Beretta M9's", {
+    entity = "tfa_csgo_elite",
+    model = "models/weapons/tfa_csgo/w_elite.mdl",
+    amount = 5,
+    price = 1800,
+    pricesep = 250,
+    noship = false,
+    separate = true,
+    category = "Pistols",
+    allowed = {
+        TEAM_GUN
+    },
+})
+
+DarkRP.createShipment("CZ75-Auto", {
+    entity = "tfa_csgo_cz75",
+    model = "models/weapons/tfa_csgo/w_cz75.mdl",
+    amount = 3,
+    price = 1800,
+    pricesep = 275,
+    noship = false,
+    separate = true,
+    category = "Pistols",
+    allowed = {
+        TEAM_GUN
+    },
+})
+
+DarkRP.createShipment("P250", {
+    entity = "tfa_csgo_p250",
+    model = "models/weapons/tfa_csgo/w_p250.mdl",
+    amount = 5,
+    price = 1500,
+    pricesep = 200,
+    noship = false,
+    separate = true,
+    category = "Pistols",
+    allowed = {
+        TEAM_GUN
+    },
+})
+
+-- Shotguns
+DarkRP.createShipment("Nova", {
+    entity = "tfa_csgo_nova",
+    model = "models/weapons/tfa_csgo/w_nova.mdl",
+    amount = 5,
+    price = 3500,
+    pricesep = 700,
+    noship = false,
+    separate = true,
+    category = "Shotguns",
+    allowed = {
+        TEAM_GUN
+    },
+})
+
+DarkRP.createShipment("Sawed-Off", {
+    entity = "tfa_csgo_sawedoff",
+    model = "models/weapons/tfa_csgo/w_nova.mdl",
+    amount = 5,
+    price = 2000,
+    pricesep = 400,
+    noship = false,
+    separate = true,
+    category = "Shotguns",
+    allowed = {
+        TEAM_GUN
+    },
+})
+
+-- Heavy
+DarkRP.createShipment("M249", {
+    entity = "tfa_csgo_m249",
+    model = "models/weapons/tfa_csgo/w_m249.mdl",
+    amount = 3,
+    price = 25000,
+    pricesep = 10000,
+    noship = false,
+    separate = true,
+    category = "Heavy",
+    allowed = {
+        TEAM_GUN
+    },
+})
+
+-- tfa_csgo_m249
+
+-- Explosive
+
+DarkRP.createShipment("C4", {
+    entity = "tfa_csgo_c4",
+    model = "models/weapons/tfa_csgo/w_c4_pl.mdl",
+    amount = 1,
+    price = 100000,
+    pricesep = 100000,
+    noship = true,
+    separate = true,
+    category = "Other",
+    allowed = {
+        TEAM_MOB
+    },
+})
+
+-- Healing
+
+DarkRP.createShipment("Medi-Shot", {
+    entity = "tfa_csgo_medishot",
+    model = "models/weapons/tfa_csgo/w_eq_healthshot.mdl",
+    amount = 5,
+    price = 4500,
+    pricesep = 1000,
+    noship = false,
+    separate = true,
+    category = "Other",
+    allowed = {
+        TEAM_MEDIC
+    },
+})
+
+-- Other
 
 DarkRP.createEntity("Money printer", {
     ent = "money_printer",
@@ -187,6 +286,15 @@ DarkRP.createCategory{
     startExpanded = true,
     color = Color(0, 107, 0, 255),
     canSee = fp{fn.Id, true},
+    sortOrder = 101,
+}
+
+DarkRP.createCategory{
+    name = "SMGs",
+    categorises = "shipments",
+    startExpanded = true,
+    color = Color(0, 107, 0, 255),
+    canSee = fp{fn.Id, true},
     sortOrder = 100,
 }
 
@@ -196,7 +304,7 @@ DarkRP.createCategory{
     startExpanded = true,
     color = Color(0, 107, 0, 255),
     canSee = fp{fn.Id, true},
-    sortOrder = 101,
+    sortOrder = 102,
 }
 
 DarkRP.createCategory{
@@ -205,16 +313,25 @@ DarkRP.createCategory{
     startExpanded = true,
     color = Color(0, 107, 0, 255),
     canSee = fp{fn.Id, true},
-    sortOrder = 102,
+    sortOrder = 103,
+}
+
+DarkRP.createCategory{
+    name = "Heavy",
+    categorises = "shipments",
+    startExpanded = true,
+    color = Color(0, 107, 0, 255),
+    canSee = fp{fn.Id, true},
+    sortOrder = 104,
 }
 
 DarkRP.createCategory{
     name = "Pistols",
-    categorises = "weapons",
+    categorises = "shipments",
     startExpanded = true,
     color = Color(0, 107, 0, 255),
     canSee = fp{fn.Id, true},
-    sortOrder = 100,
+    sortOrder = 99,
 }
 
 DarkRP.createCategory{
@@ -234,77 +351,3 @@ DarkRP.createCategory{
     canSee = fp{fn.Id, true},
     sortOrder = 255,
 }
-
-
-
--- DarkRP.createShipment("Desert eagle", {
---     model = "models/weapons/c_mw2_deagle.mdl",
---     entity = "robotnik_mw2_de",
---     price = 215,
---     amount = 10,
---     separate = true,
---     pricesep = 215,
---     noship = true,
---     allowed = {TEAM_GUN},
---     category = "Pistols",
--- })
-
--- DarkRP.createShipment("G18", {
---     model = "models/weapons/c_mw2_g18.mdl",
---     entity = "robotnik_mw2_g18",
---     price = 0,
---     amount = 10,
---     separate = true,
---     pricesep = 205,
---     noship = true,
---     allowed = {TEAM_GUN},
---     category = "Pistols",
--- })
-
--- DarkRP.createShipment("AK47", {
---     model = "models/weapons/w_mw2_ak47new.mdl",
---     entity = "robotnik_mw2_ak",
---     price = 2450,
---     amount = 10,
---     separate = false,
---     pricesep = nil,
---     noship = false,
---     allowed = {TEAM_GUN},
---     category = "Rifles",
--- })
-
--- DarkRP.createShipment("MP5k", {
---     model = "models/weapons/w_mw2_mp5k_new.mdl",
---     entity = "robotnik_mw2_mp5",
---     price = 2200,
---     amount = 10,
---     separate = false,
---     pricesep = nil,
---     noship = false,
---     allowed = {TEAM_GUN},
---     category = "Rifles",
--- })
-
--- DarkRP.createShipment("M4A1", {
---     model = "models/weapons/w_mw2_m4a1_new.mdl",
---     entity = "robotnik_mw2_m4",
---     price = 2450,
---     amount = 10,
---     separate = false,
---     pricesep = nil,
---     noship = false,
---     allowed = {TEAM_GUN},
---     category = "Rifles",
--- })
-
--- DarkRP.createShipment("SPAS-12", {
---     model = "models/weapons/c_mw2_spas12.mdl",
---     entity = "robotnik_mw2_sps",
---     price = 1750,
---     amount = 10,
---     separate = false,
---     pricesep = nil,
---     noship = false,
---     allowed = {TEAM_GUN},
---     category = "Shotguns",
--- })

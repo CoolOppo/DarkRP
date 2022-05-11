@@ -50,12 +50,8 @@ function ENT:OnTakeDamage(dmg)
     self.damage = (self.damage or 100) - dmg:GetDamage()
     if self.damage <= 0 then
         local rnd = math.random(1, 10)
-        if rnd < 3 then
-            self:BurstIntoFlames()
-        else
-            self:Destruct()
-            self:Remove()
-        end
+        self:Destruct()
+        self:Remove()
     end
 end
 
@@ -84,8 +80,8 @@ function ENT:Fireball()
     local dist = math.random(20, 280) -- Explosion radius
     self:Destruct()
     for k, v in ipairs(ents.FindInSphere(self:GetPos(), dist)) do
-        if not v:IsPlayer() and not v:IsWeapon() and v:GetClass() ~= "predicted_viewmodel" and not v.IsMoneyPrinter then
-            v:Ignite(math.random(5, 22), 0)
+        if not v:IsPlayer() and not v:IsWeapon() and v:GetClass() ~= "predicted_viewmodel" then
+            v:Ignite(math.random(5, 22), math.random(20, 280))
         elseif v:IsPlayer() then
             local distance = v:GetPos():Distance(self:GetPos())
             v:TakeDamage(distance / dist * 100, self, self)

@@ -23,6 +23,7 @@ local function SetAFK(ply)
     SendUserMessage("blackScreen", ply, ply:getDarkRPVar("AFK"))
 
     if ply:getDarkRPVar("AFK") then
+        ply:Kick("AFK")
         DarkRP.retrieveSalary(ply, function(amount) ply.OldSalary = amount end)
         ply.OldJob = ply:getDarkRPVar("job")
         ply.lastHealth = ply:Health()
