@@ -56,7 +56,7 @@ FAdmin.StartHooks["zzSetTeam"] = function()
     FAdmin.Messages.RegisterNotification{
         name = "setteam",
         hasTarget = true,
-        receivers = "everyone",
+        receivers = "admins",
         writeExtraInfo = function(info) net.WriteUInt(info[1], 16) end,
         message = {"instigator", " set the team of ", "targets", " to ", "extraInfo.1"},
     }

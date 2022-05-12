@@ -43,14 +43,14 @@ FAdmin.StartHooks["God"] = function()
         name = "god",
         hasTarget = true,
         message = {"instigator", " enabled godmode for ", "targets"},
-        receivers = "everyone",
+        receivers = "admins",
     }
 
     FAdmin.Messages.RegisterNotification{
         name = "ungod",
         hasTarget = true,
         message = {"instigator", " disabled godmode for ", "targets"},
-        receivers = "everyone",
+        receivers = "admins",
     }
 
     FAdmin.Commands.AddCommand("God", God)

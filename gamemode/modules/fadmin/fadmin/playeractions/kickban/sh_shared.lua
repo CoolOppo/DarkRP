@@ -45,7 +45,7 @@ FAdmin.StartHooks["kickbanning"] = function()
         name = "kick",
         hasTarget = false,
         message = {"instigator", " kicked ", "extraInfo.1", " (", "extraInfo.2", ")"},
-        receivers = "everyone",
+        receivers = "admins",
         writeExtraInfo = function(info)
             net.WriteString(info[1])
             net.WriteString(info[2])
@@ -61,7 +61,7 @@ FAdmin.StartHooks["kickbanning"] = function()
         name = "ban",
         hasTarget = false,
         message = {"instigator", " banned ", "extraInfo.1", " for ", "extraInfo.2", " (", "extraInfo.3", ")"},
-        receivers = "everyone",
+        receivers = "admins",
         writeExtraInfo = function(info)
             net.WriteString(info[1])
 
@@ -81,7 +81,7 @@ FAdmin.StartHooks["kickbanning"] = function()
         name = "unban",
         hasTarget = false,
         message = {"instigator", " unbanned ", "extraInfo.1", " (", "extraInfo.2", ")"},
-        receivers = "everyone",
+        receivers = "admins",
         writeExtraInfo = function(info)
             net.WriteString(info[1])
             net.WriteString(info[2])
