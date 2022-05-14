@@ -18,7 +18,7 @@ Set to true or false.
 -- voice3D - Enable/disable 3DVoice is enabled.
 GM.Config.voice3D                       = true
 -- AdminsCopWeapons - Enable/disable admins spawning with cop weapons.
-GM.Config.AdminsCopWeapons              = true
+GM.Config.AdminsCopWeapons              = false
 -- adminBypassJobCustomCheck - Enable/disable whether an admin can force set a job with whenever customCheck returns false.
 GM.Config.adminBypassJobRestrictions    = true
 -- Acts/Taunts - Enable/disable Taunts (e.g. act salute)
@@ -38,11 +38,11 @@ GM.Config.alltalk                       = false
 -- antimultirun - Disallow people joining your server(s) twice on the same account.
 GM.Config.antimultirun                  = true
 -- autovehiclelock - Enable/Disable automatic locking of a vehicle when a player exits it.
-GM.Config.autovehiclelock               = false
+GM.Config.autovehiclelock               = true
 -- babygod - people spawn godded (prevent spawn killing).
 GM.Config.babygod                       = false
 -- canforcedooropen - whether players can force an unownable door open with lockpick or battering ram or w/e.
-GM.Config.canforcedooropen              = false
+GM.Config.canforcedooropen              = true
 -- chatsounds - sounds are played when some things are said in chat.
 GM.Config.chatsounds                    = true
 -- chiefjailpos - Allow the Chief to set the jail positions.
@@ -62,7 +62,7 @@ GM.Config.customjobs                    = true
 -- customspawns - Enable/disable whether custom spawns should be used.
 GM.Config.customspawns                  = true
 -- deathblack - Whether or not a player sees black on death.
-GM.Config.deathblack                    = false
+GM.Config.deathblack                    = true
 -- showdeaths - Display kill information in the upper right corner of everyone's screen.
 GM.Config.showdeaths                    = true
 -- deadtalk - Enable/disable whether people talk and use commands while dead.
@@ -72,7 +72,7 @@ GM.Config.deadvoice                     = true
 -- deathpov - Enable/disable whether people see their death in first person view.
 GM.Config.deathpov                      = true
 -- decalcleaner - Enable/Disable clearing every player's decals.
-GM.Config.decalcleaner                  = false
+GM.Config.decalcleaner                  = true
 -- disallowClientsideScripts - Clientside scripts can be very useful for customizing the HUD or to aid in building. This option bans those scripts.
 GM.Config.disallowClientsideScripts     = true
 -- doorwarrants - Enable/disable Warrant requirement to enter property.
@@ -96,7 +96,7 @@ GM.Config.enablebuypistol               = true
 -- enforceplayermodel - Whether or not to force players to use their role-defined character models.
 GM.Config.enforceplayermodel            = true
 -- globalshow - Whether or not to display player info above players' heads in-game.
-GM.Config.globalshow                    = true
+GM.Config.globalshow                    = false
 -- ironshoot - Enable/disable whether people need iron sights to shoot.
 GM.Config.ironshoot                     = false
 -- showjob - Whether or not to display a player's job above their head in-game.
@@ -193,15 +193,15 @@ GM.Config.arrestspeed                   = 120
 GM.Config.babygodtime                   = 1
 -- chatsoundsdelay - How long to wait before letting a player emit a sound from their chat again.
 -- Leave this on at least a few seconds to prevent people from spamming sounds. Set to 0 to disable.
-GM.Config.chatsoundsdelay               = 3
+GM.Config.chatsoundsdelay               = 0
 -- deathfee - the amount of money someone drops when dead.
-GM.Config.deathfee                      = 150
+GM.Config.deathfee                      = 350
 -- decaltimer - Sets the time to clear clientside decals (in seconds).
 GM.Config.decaltimer                    = 120
 -- demotetime - Number of seconds before a player can rejoin a team after demotion from that team.
 GM.Config.demotetime                    = 600
 -- doorcost - Sets the cost of a door.
-GM.Config.doorcost                      = 100
+GM.Config.doorcost                      = 200
 -- entremovedelay - how long to wait before removing a bought entity after disconnect.
 GM.Config.entremovedelay                = 120
 -- gunlabweapon - The weapon that the gunlab spawns.
@@ -227,9 +227,9 @@ GM.Config.maxlawboards                  = 2
 -- maxletters - Sets max letters.
 GM.Config.maxletters                    = 10
 -- maxlotterycost - Maximum payment the mayor can set to join a lottery.
-GM.Config.maxlotterycost                = 500
+GM.Config.maxlotterycost                = 10000
 -- maxvehicles - Sets how many vehicles one can buy.
-GM.Config.maxvehicles                   = 5
+GM.Config.maxvehicles                   = 2
 -- microwavefoodcost - Sets the sale price of Microwave Food.
 GM.Config.microwavefoodcost             = 30
 -- minlotterycost - Minimum payment the mayor can set to join a lottery.
@@ -271,7 +271,7 @@ GM.Config.shipmentspawntime             = 1
 -- startinghealth - the health when you spawn.
 GM.Config.startinghealth                = 100
 -- startingmoney - your wallet when you join for the first time.
-GM.Config.startingmoney                 = 1500
+GM.Config.startingmoney                 = 2000
 -- stunstickdamage - amount of damage the stunstick will do to entities.
 -- When between 0 and 1, the damage is relative, where 1 takes the entire health of the entity.
 -- When above 1, the damage is absolute
@@ -279,7 +279,7 @@ GM.Config.stunstickdamage               = 0.1
 -- vehiclecost - Sets the cost of a vehicle (To own it).
 GM.Config.vehiclecost                   = 80
 -- wallettaxmax - Maximum percentage of tax to be paid.
-GM.Config.wallettaxmax                  = 3
+GM.Config.wallettaxmax                  = 10
 -- wallettaxmin - Minimum percentage of tax to be paid.
 GM.Config.wallettaxmin                  = 1
 -- wallettaxtime - Time in seconds between taxing players. Requires server restart.
