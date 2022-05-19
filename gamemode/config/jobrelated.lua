@@ -41,7 +41,7 @@ TEAM_HITMAN = DarkRP.createJob("Hitman", {
 
 TEAM_TERRORIST = DarkRP.createJob("Terrorist", {
     color = Color(25, 25, 25, 255),
-    model = "models/dannio/noahg/willsmith_belair.mdl",
+    model = {"models/dannio/noahg/willsmith_belair.mdl","models/eradium/rexouium.mdl"},
     description = [[They need to all be killed.
     YOU ONLY GET ONE SHOT AND THEN YOU'RE DEMOTED]],
     weapons = {"weapon_jihadbomb"},
@@ -158,12 +158,9 @@ TEAM_CHIEF = DarkRP.createJob("Police Chief", {
     model = {"models/omgwtfbbq/quantum_break/characters/operators/monarchoperator01playermodel.mdl", "models/player/falloutnewvegas/ncr/ncr_ranger_playermodel.mdl", "models/ninja/jc_denton.mdl", "models/player/neckbeard.mdl"},
     description = [[The Chief is the leader of the Police unit.
         Coordinate the police force to enforce law in the city.
-        Hit a player with arrest baton to put them in jail.
-        Bash a player with a stunstick and they may learn to obey the law.
-        The Battering Ram can break down the door of a criminal, with a warrant for his/her arrest.
-        Type /wanted <name> to alert the public to the presence of a criminal.
-        Type /jailpos to set the Jail Position]],
-    weapons = {"arrest_stick", "unarrest_stick", "robotnik_mw2_g18", "stunstick", "lockpick", "bkeypads_cracker", "zwf_sniffer", "tfa_csgo_flash", "tfa_csgo_smoke", "tfa_csgo_frag", "tfa_csgo_item_defuser", "vs_policemod_gps", "vs_policemod_radio", "vs_policemod_tablet"},
+        Use /agenda to set the agenda for law enforcement.
+        Use your tablet to control the police dispatch.]],
+    weapons = {"arrest_stick", "unarrest_stick", "robotnik_mw2_g18", "tfa_csgo_aug", "stunstick", "lockpick", "bkeypads_cracker", "zwf_sniffer", "tfa_csgo_flash", "tfa_csgo_smoke", "tfa_csgo_frag", "tfa_csgo_item_defuser", "vs_policemod_gps", "vs_policemod_radio", "vs_policemod_tablet"},
     command = "chief",
     max = 1,
     salary = GAMEMODE.Config.normalsalary * 6,
@@ -174,6 +171,7 @@ TEAM_CHIEF = DarkRP.createJob("Police Chief", {
     NeedToChangeFrom = TEAM_POLICE,
     ammo = {
         ["pistol"] = 60,
+        ["ar2"] = 300,
     },
     category = "Police",
 })
@@ -188,7 +186,7 @@ TEAM_MAYOR = DarkRP.createJob("President Joe Biden", {
     Everyone must be inside during a lockdown.
     The cops patrol the area.
     /unlockdown to end a lockdown]],
-    weapons = {"unarrest_stick", "tfa_iw7_tactical_knife", "wowozela"},
+    weapons = {"unarrest_stick", "tfa_iw7_tactical_knife", "wowozela", "vs_policemod_gps", "vs_policemod_radio", "vs_policemod_tablet"},
     command = "mayor",
     max = 1,
     salary = GAMEMODE.Config.normalsalary * 8,
